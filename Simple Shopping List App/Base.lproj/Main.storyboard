@@ -89,6 +89,9 @@
                                     <constraint firstAttribute="width" constant="107" id="PTi-bL-Cxz"/>
                                 </constraints>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <segue destination="40k-t8-i7m" kind="show" id="XEk-6w-4E8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pR1-ir-x3V">
                                 <rect key="frame" x="228" y="577" width="107" height="30"/>
@@ -97,39 +100,34 @@
                                     <action selector="cancelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRP-we-aNr"/>
                                 </connections>
                             </button>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="eAD-0J-NqN">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="eAD-0J-NqN">
                                 <rect key="frame" x="238" y="213" width="94" height="29"/>
                                 <connections>
-                                    <action selector="stepperAction0:" destination="BYZ-38-t0r" eventType="valueChanged" id="08H-0Z-Mhk"/>
-                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ogC-Mf-Hhe"/>
+                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="uQe-1N-jfT"/>
                                 </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="3R8-G1-EOu">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="3R8-G1-EOu">
                                 <rect key="frame" x="238" y="282" width="94" height="29"/>
                                 <connections>
-                                    <action selector="stepperAction1:" destination="BYZ-38-t0r" eventType="valueChanged" id="X4b-bK-skt"/>
-                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="GLh-kh-8xE"/>
+                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="bDp-2M-5FQ"/>
                                 </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="agA-Nc-cT0">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="agA-Nc-cT0">
                                 <rect key="frame" x="238" y="347" width="94" height="29"/>
                                 <connections>
-                                    <action selector="stepperAction2:" destination="BYZ-38-t0r" eventType="valueChanged" id="dRK-hc-PDN"/>
-                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ygD-Rr-kpE"/>
+                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="HxP-Dm-K0S"/>
                                 </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Uyj-zW-7tE">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uyj-zW-7tE">
                                 <rect key="frame" x="238" y="417" width="94" height="29"/>
                                 <connections>
-                                    <action selector="stepperAction3:" destination="BYZ-38-t0r" eventType="valueChanged" id="3Ct-7s-j7c"/>
-                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="D1b-Fi-EHa"/>
+                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="9Hn-kP-yLi"/>
                                 </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Y3i-8C-wmJ">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y3i-8C-wmJ">
                                 <rect key="frame" x="238" y="478" width="94" height="29"/>
                                 <connections>
-                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="7NM-sO-BIu"/>
-                                    <action selector="stepperValue4:" destination="BYZ-38-t0r" eventType="valueChanged" id="4Ys-H0-zxy"/>
+                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="vTb-Wp-8n6"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aE-3X-yW9">
@@ -166,7 +164,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.7886524144741055" green="1" blue="0.55733089059798369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Rfa-vb-hS0" firstAttribute="baseline" secondItem="pR1-ir-x3V" secondAttribute="baseline" id="271-Gg-dNL"/>
                             <constraint firstItem="UkK-VI-bLh" firstAttribute="leading" secondItem="Kgl-Bj-e9p" secondAttribute="leading" id="27H-Bt-IZV"/>
@@ -234,24 +232,45 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="stepper" destination="eAD-0J-NqN" id="6Z9-Uc-hoJ"/>
-                        <outlet property="stepper0" destination="eAD-0J-NqN" id="ylT-hW-Mjc"/>
-                        <outlet property="stepper1" destination="3R8-G1-EOu" id="TWh-20-zg4"/>
-                        <outlet property="stepper2" destination="agA-Nc-cT0" id="OIn-uB-pWa"/>
-                        <outlet property="stepper3" destination="Uyj-zW-7tE" id="9Qw-Kt-Z71"/>
-                        <outlet property="stepper4" destination="Y3i-8C-wmJ" id="VvA-OW-ICo"/>
-                        <outlet property="stepperAction3" destination="Uyj-zW-7tE" id="LCc-MS-JSV"/>
-                        <outlet property="stepperValue" destination="bQA-pR-YNC" id="Mgh-0L-BvT"/>
-                        <outlet property="stepperValue0" destination="4aE-3X-yW9" id="hh4-3g-eVd"/>
-                        <outlet property="stepperValue1" destination="bQA-pR-YNC" id="X0M-Lb-5EY"/>
-                        <outlet property="stepperValue2" destination="UkK-VI-bLh" id="heL-0L-6q0"/>
-                        <outlet property="stepperValue3" destination="Kgl-Bj-e9p" id="hun-gd-5bk"/>
-                        <outlet property="stepperValue4" destination="DwB-eJ-ven" id="RXM-Nx-bqK"/>
+                        <outlet property="stepper0" destination="eAD-0J-NqN" id="Txm-6D-bNS"/>
+                        <outlet property="stepper1" destination="3R8-G1-EOu" id="AWQ-uN-bTa"/>
+                        <outlet property="stepper2" destination="agA-Nc-cT0" id="Evn-RB-RKG"/>
+                        <outlet property="stepper3" destination="Uyj-zW-7tE" id="YTr-gm-tAn"/>
+                        <outlet property="stepper4" destination="Y3i-8C-wmJ" id="fg5-IQ-DrI"/>
+                        <outlet property="stepperValue0" destination="4aE-3X-yW9" id="JN1-KX-zig"/>
+                        <outlet property="stepperValue1" destination="bQA-pR-YNC" id="Lyz-ZK-xYl"/>
+                        <outlet property="stepperValue2" destination="UkK-VI-bLh" id="iua-b8-KvN"/>
+                        <outlet property="stepperValue3" destination="Kgl-Bj-e9p" id="Fcu-Ny-NZx"/>
+                        <outlet property="stepperValue4" destination="DwB-eJ-ven" id="BP8-nu-20a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8Cr-WL-YyE">
+            <objects>
+                <viewController id="40k-t8-i7m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YlC-9f-slc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moved to new screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5r-no-UwE">
+                                <rect key="frame" x="80" y="87" width="200" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="QUF-sq-a9X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxU-6w-b5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

@@ -6,30 +6,30 @@
  * Description : Shop easy - A simple shopping online app
  * Version : 1.0
  */
+
 import UIKit
 
 class ViewController: UIViewController {
 
-    // VARIABLES +++++++++++++++++++++++++++
     
     
- // OUTLETS ++++++++++++++++++++++++++++++
+    // OUTLETS ++++++++++++++++++++++++++++++
     @IBOutlet weak var stepper0: UIStepper!
     @IBOutlet weak var stepper1: UIStepper!
     @IBOutlet weak var stepper2: UIStepper!
     @IBOutlet weak var stepper3: UIStepper!
     @IBOutlet weak var stepper4: UIStepper!
+
     @IBOutlet weak var stepperValue0: UILabel!
     @IBOutlet weak var stepperValue1: UILabel!
     @IBOutlet weak var stepperValue2: UILabel!
     @IBOutlet weak var stepperValue3: UILabel!
     @IBOutlet weak var stepperValue4: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
        
     }
-    
     // ACTIONS AND METHODS
     
     /*!
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         stepperValue3.text = "/(Int(stepper3.value))"
         stepperValue4.text = "/(Int(stepper4.value))"
     }
-    
+
     /*!
      * @discussion It resets the Label
      */
@@ -56,6 +56,6 @@ class ViewController: UIViewController {
         stepperValue4.text = "0"
         
     }
-    
+
 }
 
